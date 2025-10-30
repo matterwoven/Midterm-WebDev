@@ -11,29 +11,26 @@
 <body>
     <div id="DreamVacayContainer">
         <header>
-            <img width="100" src="images/InputField.png"/>
-            <h1>Form Input Application</h1>
+            <img src="https://bit.ly/305-vacation" id="bg-img" alt="background image">
+            <h1>Book Your Dream Vacation</h1>
         </header>
-        <div id="bodyElement">
-            <form id="inputForm" action="/submit-form" method="post">
-                <label for="Email">First option</label>
-                <input name="Email" type="email"></input>
-                <label for="Name">Second option</label>
-                <input name="Name" type="text"></input>
-            </form>
-            <div>
-                <p>This is a text</p>
-            </div>
-            <div>
-                <p>OtherDivElement</p>
-            </div>
-        </div>
         <footer>
-            <ul>
-                <li>Maintained by Matterwoven</li><br>
-                <li><img width="15" src="images/DiscordLogo.jpeg"/>Matterwoven on Discord</li><br>
-                <li><img width="15" src="images/GithubLogo.jpg"/>Matterwoven on Github</li>
-            </ul>
+            <form id="inputForm" action="/submit-form" method="post">
+                <div class="Destination">
+                    <label for="Email">Destination</label>
+                    <input name="Email" type="email"></input>
+                </div>
+                <div id="departAndMore">
+                    <div class="DepartureDate">
+                        <label for="Name">Departure Date</label><br>
+                        <input name="Name" type="date"></input>
+                    </div>
+                    <div class="NumOfTravelers">
+                        <label for="Name">Number of Travelers</label><br>
+                        <input name="Name" type="text"></input>
+                    </div>
+                </div>
+                <button type="submit">Find My Vacation</button>
         </footer>
     </div>
 </body>
