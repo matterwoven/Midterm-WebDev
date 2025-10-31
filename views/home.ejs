@@ -11,28 +11,39 @@
 <body>
     <div id="DreamVacayContainer">
         <header>
-            <p>
-                Book Your Dream Vacation
+            <div class="header-content">
                 <img src="https://bit.ly/305-vacation" id="bg-img" alt="background image">
-            </p>
-        </header>
+                <p>Book Your Dream Vacation</p>
+            </div>
+        </header>        
         <footer>
             <form id="inputForm" action="/submit-form" method="post">
                 <div class="Destination">
-                    <label for="Email">Destination</label>
-                    <input name="Email" type="email"></input>
+                    <label for="Destination">Destination</label>
+                    <select name="Destination" id="Destination">
+                        <option value="" hidden selected disabled>--Choose one--</option>
+                        <option value="Paris">Paris</option>
+                        <option value="New York City">New York City</option>
+                        <option value="Rome">Rome</option>
+                        <option value="Yellowstone National Park">Yellowstone National Park</option>
+                        <option value="Barcelona">Barcelona</option>
+                    </select>
+                    <span id="destinationError"></span>
                 </div>
                 <div id="departAndMore">
                     <div class="DepartureDate">
-                        <label for="Name">Departure Date</label><br>
-                        <input name="Name" type="date"></input>
+                        <label for="Date">Departure Date</label><br>
+                        <input name="Date" type="date"></input>
+                        <span id="dateError"></span>
                     </div>
                     <div class="NumOfTravelers">
-                        <label for="Name">Number of Travelers</label><br>
-                        <input name="Name" type="text"></input>
+                        <label for="NumOfTravelers">Number of Travelers</label><br>
+                        <input name="NumOfTravelers" type="number" min="0" max="100" step="1"></input>
+                        <span id="travelersError"></span>
                     </div>
                 </div>
                 <button type="submit">Find My Vacation</button>
+            </form>
         </footer>
     </div>
 </body>

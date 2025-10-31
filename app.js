@@ -18,27 +18,12 @@ app.get('/', (req, res) => {
 
 const appointmentsArray = []
 
+app.get('/landingPage', (req, res) => {
+    res.render('landingPage');
+  });
+
 app.post('/submit-form', (req, res) => {
-
-
-    // Create a JSON object to store the order data
-
-    const appointment = {
-
-        fname: req.body.fname,
-
-        lname: req.body.lname,
-
-        date: req.body.date,
-
-        time: req.body.time,
-
-        timestamp: new Date()
-
-      };
-
-    appointmentsArray.push(appointment);
-    // res.sendFile(`${import.meta.dirname}/views/response.html`)
+    res.render('landingPage');
 });
 
 // Start server
