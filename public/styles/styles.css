@@ -22,6 +22,7 @@ Header {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 Footer {
@@ -85,8 +86,6 @@ Button {
     font-size: large;
 }
 
-#bg-img {
-}
 /* One relative */
 
 /* One absolute */
@@ -94,6 +93,10 @@ Button {
     width: 220px;
 }
 
-.DreamVacayContainer > h1 {
-    position:fixed;
+#bg-img{
+    width: 93vw;
+}
+
+header > p, header > img {
+    float:unset
 }
